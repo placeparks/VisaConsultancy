@@ -36,3 +36,153 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.custom-shape-divider-bottom-1699810272 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  height: auto; 
+  min-height: 100%; 
+}
+
+.custom-shape-divider-bottom-1699810272 svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 294px;
+  bottom: 0;
+}
+
+
+.custom-shape-divider-bottom-1699810272 .shape-fill {
+  fill: #FFFFFF;
+}
+/* index.css or another CSS file */
+.height-90-screen {
+  height: 90vh; /* vh is a unit for viewport height */
+}
+
+
+
+/* Additional custom CSS for blobs */
+.blob {
+  position: absolute;
+  width: 200px; /* Adjust size as needed */
+  height: 200px;
+  background: rgb(79, 160, 236); /* Example color */
+  border-radius: 50%;
+  opacity: 0.5; /* Adjust for desired transparency */
+}
+
+.blob-1 {
+  top: -30px; /* Adjust position as needed */
+  left: 70px;
+}
+
+.blob-2 {
+  bottom: -50px;
+  right: 100px;
+}
+
+/* Add more blob styles for additional blobs */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the value for more or less movement */
+  }
+}
+
+/* Add a similar keyframe for horizontal movement if desired */
+@keyframes drift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Adjust the value for more or less movement */
+  }
+}
+.blob {
+  /* Previous styles for blob */
+  animation: float 6s ease-in-out infinite, drift 8s ease-in-out infinite; /* Use different durations for a more dynamic effect */
+}
+
+/* You can define different animations for each blob for variety */
+.blob-1 {
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+.blob-2 {
+  animation: drift 5s ease-in-out infinite alternate;
+}
+
+
+.hamburger {
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* When the menu is open, animate the hamburger icon into a 'close' icon */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@keyframes moveAirplane {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(calc(100% - 70%)); /* Adjust to where the text starts */
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(calc(100% - 20%)); /* Airplane starts to disappear */
+    opacity: 0;
+  }
+  55% {
+    transform: translateX(-100%); /* Airplane is off-screen and invisible */
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(0); /* Airplane comes back to start */
+    opacity: 1;
+  }
+}
+
+.airplane-container {
+  animation: moveAirplane 10s linear infinite;
+}
+
+.image-container {
+  overflow: hidden; /* Prevents the image from spilling out */
+}
+
