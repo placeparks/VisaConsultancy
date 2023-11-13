@@ -15,7 +15,7 @@ const WorkPermit = () => {
         <h1 className="text-4xl font-bold my-6 lg:text-left lg:pl-20">Work Permit</h1>
         <div className="flex flex-col justify-between h-full">
           <div>
-            <div className="flex items-center gap-5 mb-10 lg:pl-20">
+            <div className="flex items-center gap-5 mb-7 lg:pl-20">
               <Flag code="CA" style={{ height: "20px", width: "20px", borderRadius: "50%", objectFit: "cover" }} />
               <span className='font-medium text-lg'>Canada</span>
             </div>
