@@ -15,7 +15,7 @@ const MainSection = () => {
 
 
 <div className="text w-full md:w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0 z-2">
-      <h1 className="text-6xl font-bold mb-4">Seeking Migration Career?</h1>
+      <h1 className="text-6xl font-bold mb-4">Seeking Career Migration?</h1>
     <p className="text-xl mb-8">Unlock a world of opportunities and enjoy the freedom of travel</p>
     <button
   className="bg-green-500 px-6 py-2 rounded text-white font-bold hover:bg-green-600 mb-12 z-10"
